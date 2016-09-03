@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration:none;
+  color:#000;
+  display:inline-block;
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+  height:0;
+}

@@ -1,0 +1,392 @@
+/*common css*/
+*{
+  font:14px "黑体";
+}
+.common-header,
+.common-footer,
+.index-main{
+  width:1280px;
+  background:#fff;
+  margin:0 auto;
+}
+body{
+  background:#eee;
+}
+/*common-header*/
+.common-header{
+  height:56px;
+  line-height:56px;
+}
+.header-logo{
+  float:left;
+  margin-left:59px;
+  height:56px;
+  line-height:56px;
+}
+.header-logo i{
+  display:inline-block;
+  width:30px;
+  height:30px;
+  vertical-align: middle;
+  background:url("../images/logo.gif") no-repeat;
+}
+.header-logo span{
+  font-size:21px;
+  vertical-align: middle;
+}
+.header-nav{
+  float:right;
+  margin-right:33px;
+}
+.header-nav li{
+  float:left;
+}
+.header-nav li a{
+  font:14px "微软雅黑";
+  height:56px; 
+  line-height:56px;
+  padding:0 22px;
+}
+.header-nav li a:hover{
+  color:#E74F4D;
+  border-bottom:4px solid #E74F4D;
+}
+.header-log-in{
+  color:#E74F4D;
+}
+.header-log-in i{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  background:url("../images/02.gif") no-repeat;
+  vertical-align: middle;
+  position:relative;
+  left:-5px;
+}
+.header-nav .header-log-in a{
+  color:#E74F4D;
+}
+.header-nav .header-log-in a:hover{
+  color:#E74F4D;
+  border:none;
+}
+/*common-header end*/
+/*common-footer*/
+.common-footer .contact-us{
+  height:360px;
+  background:#32363E;
+}
+.contact-us .contact-wrap{
+  width:512px;
+  padding-top:92px;
+  margin:0 auto;
+}
+.contact-text{
+  color:#fff;
+  text-align:center;
+}
+.contact-text h2{
+  font-size:21px;
+}
+.contact-text p{
+  font:12px "宋体";
+  line-height:1.5em;
+  color:#FEFEFE;
+}
+.contact-form{
+  margin-top:27px;
+}
+.contact-form input{
+  height:40px;
+  border:none;
+  float:left;
+}
+.contact-form .form-text{
+  width:430px;
+  padding: 14px 10px;
+}
+.contact-form .form-button{
+  width:82px;
+  background:#6F7278;
+}
+.contact-links{
+  padding-top:36px;
+  width:200px;
+  margin:0 auto;
+  height:26px;
+}
+.contact-links img{
+  width:24px;
+}
+.common-footer .copyright{
+  height:60px;
+  background:#2F2F38;
+}
+.copyright{
+  position:relative;
+}
+.copyright span{
+  position:absolute;
+  bottom:12px;
+  left:38px;
+  color:#FEFEFE;
+  font:12px "宋体";
+}
+.copyright a{
+  position:absolute;
+  bottom:12px;
+  right:98px;
+  color:#FEFEFE;
+  font:12px "宋体";
+}
+/*common-footer end*/
+/*common css end*/
+.index-banner{
+  position:relative;
+  color:#fff;
+}
+.index-banner h2{
+  font:60px "微软雅黑";
+  position:absolute;
+  top:225px;
+  left:114px;
+}
+.index-banner p{
+  font:21px "微软雅黑";
+  position:absolute;
+  top:308px;
+  left:114px;
+}
+.index-banner input{
+  font:30px "微软雅黑";
+  position:absolute;
+  top:430px;
+  left:125px;
+  color:#fff;
+  width:330px;
+  height:65px;
+  border:none;
+  background:#E74F4D;
+}
+/*index-banner end*/
+/*index-list*/
+.index-list .list-col{
+  width:25%;
+  height:276px;
+  padding:70px 0 80px 0;
+  float:left;
+  text-align:center;
+  position:relative;
+  color:#909090;
+}
+.list-col i{
+  height:40px;
+}
+.list-col p{
+  margin-top:46px;
+}
+.list-col .line{
+  height:52px;
+  border-left:2px solid #909090;
+  position:absolute;
+  top:158px;
+  right:-1px;
+}
+
+/*index-list end*/
+/*index-about-newword*/
+.index-about-newword{
+  height:360px;
+  background:#EDEDEC;
+  padding:90px 0 75px 0;
+  text-align:center;
+}
+.index-about-newword .icon{
+  width:95px;
+  height:92px;
+  display:inline-block;
+}
+.index-about-newword p{
+  margin-top:45px;
+  font-size:54px;
+  color:#323232;
+}
+/*index-search*/
+.index-search{
+  position:relative;
+}
+.index-search .search-wrap{
+  position:absolute;
+  top:49px;
+  left:126px;
+  width:1030px;
+  font-family:"微软雅黑";
+  z-index:2;
+}
+.search-text{
+  text-align:center;
+}
+.search-form{
+  margin-top:46px;
+}
+.search-form select,
+.search-form input{
+  width:236px;
+  height:36px;
+  border:none;
+  background:#BE4F48;
+}
+
+.search-shade{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:341px;
+  background:#EED7D6;
+  opacity:0.3;
+  z-index:1;
+}
+/*index-activities*/
+.index-activities{
+  background:#F8F8F7;
+  height:606px;
+  padding-top:102px;
+}
+.act-wrap{
+  width:1016px;
+  margin:0 auto;
+}
+.act-col{
+  width:25%;
+  padding:0 18px;
+  float:left;
+}
+.act-col .col-wrap{
+  padding:12px;
+  border:1px solid #999;
+  text-align:center;
+  position:relative;
+  height:390px;
+}
+.col-wrap a{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.col-wrap a .text{
+  position:absolute;
+  top:330px;
+  left:52px;
+  font-size:16px;
+}
+.col-wrap a img{
+  position:absolute;
+  top:0px;
+  left:0;
+}
+.col-wrap a:hover .text{
+  top:0px;
+}
+.col-wrap a:hover .text>h2{
+  font-weight:bold;
+  font-size:20px;
+  letter-spacing: 10px;
+}
+.col-wrap a:hover .text>h3{
+  letter-spacing:6px;
+}
+.col-wrap a:hover img{
+  top:45px;
+}
+/*index-section*/
+.index-section{
+  height:566px;
+}
+.section-left{
+  width:850px;
+  height:100%;
+  position:relative;
+  float:left;
+  background:red;
+}
+.section-left .text{
+  position:absolute;
+  left:240px;
+  top:116px;
+  color:#fff;
+}
+
+.section-right{
+  float:right;
+  width:430px;
+  padding:158px 0 0 68px;
+}
+.section-right .text{
+  text-align:center;
+}
+.section-right .text h2 span{
+  color:#E7504D;
+}
+.section-right .text input{
+  border:1px solid #E7504D;
+  width:106px;
+  height:32px;
+  background:#fff;
+  color:#E7504D;
+}
+.section-right .btns{
+  margin-top:10px;
+  cursor:pointer;
+}
+.section-right .btns div{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border:1px solid #999;
+  border-radius:50%;
+}
+.section-right .btns .selected{
+  background:#999;
+}
+/*.section2*/
+.index-section .section-l,
+.index-section .section-m,
+.index-section .section-r{
+  width:33.3333333%;
+  height:100%;
+  float:left;
+  text-align:center;
+  padding-top:170px;
+}
+.index-section .section-l{
+  background:#E7504D;
+  color:#fff;
+}
+.index-section .section-button{
+  width:172px;
+  height:42px;
+  margin-top:20px;
+}
+.section-l .section-button{
+  border:1px solid #fff;
+  color:#fff;
+  background:#E7504D;
+}
+.index-section .section-m{
+
+}
+.section-m .section-button{
+  border:1px solid #E7504D;
+  color:#E7504D;
+  background:#fff;
+}
+
+.section-r{
+  background:blue;
+}
+
+/*index-form*/
+.index-form{
+  height:750px;
+}
