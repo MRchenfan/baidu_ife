@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_03</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      padding:20px;
+    }
+    div{
+      padding:20px;
+      border:1px solid #999;
+    }
+    .clearfix:after{
+      display:block;
+      content:"";
+      clear:both;
+      visibility:hidden;
+    }
+    .wrap{
+      background:#eee;
+      max-width:100%;
+      min-width:600px;
+    }
+    .box1{
+      width:200px;
+      float:left;
+    }
+    .box1 i{
+      display:inline-block;
+      width:80px;
+      height:80px;
+    }
+    .box1 span{
+      vertical-align:top;
+    }
+    .box2{
+      margin:0 140px 0 220px;
+    }
+    .box3{
+      width:120px;
+      float:right;
+    }
+    .box3-child{
+      width:80px;
+      height:80px;
+      margin-top:10px;
+      position:relative;
+    }
+    img{
+      width:80px;
+      height:80px;
+      
+    }
+    .box3 img{
+      position:absolute;
+      top:0;
+      right:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap clearfix">
+    <div class="box1">
+      <img src="images/C.jpg" alt="">
+      <span>我是cf</span>
+    </div>
+    <div class="box3">
+      <div class="box3-child"><img src="images/B.jpg" alt=""></div>
+      <div class="box3-child"><img src="images/B.jpg" alt=""></div>
+      <div class="box3-child"><img src="images/B.jpg" alt=""></div>
+      <div class="box3-child"><img src="images/B.jpg" alt=""></div>
+    </div>
+    <div class="box2">
+      <h2>关于我的团队</h2>
+      <p>我是一个野生的前端，我只有一个人<br>
+        我是学车辆工程的，我还要画a1纸的图
+        还要写一大堆实验报告
+      </p>
+    </div>
+    
+  </div>
+</body>
+</html>
