@@ -13,6 +13,12 @@
 
 
 ## 阶段二
+- [task_13: 零基础JavaScript编码（一）](https://mrchenfan.github.io/baidu_ife/stage_2/task_13)
+- [task_14: 零基础JavaScript编码（二）](https://mrchenfan.github.io/baidu_ife/stage_2/task_14)
+- [task_15: 零基础JavaScript编码（三）](https://mrchenfan.github.io/baidu_ife/stage_2/task_15)
+- [task_16: 零基础JavaScript编码（四）](https://mrchenfan.github.io/baidu_ife/stage_2/task_16)
+- [task_17: 零基础JavaScript编码（五）](https://mrchenfan.github.io/baidu_ife/stage_2/task_17)
+
 
 ## 阶段三
 
