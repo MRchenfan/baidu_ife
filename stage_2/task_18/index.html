@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_18</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    body{
+      padding:50px;
+    }
+    .wrap{
+      padding-top:20px;   
+      border:2px dashed #e4393c;
+      display:none;
+    }
+    .wrap span{
+      display:inline-block;
+      width:30px;
+      height:30px;
+      background:#e4393c;
+      color:#fff;
+      margin:5px;
+      text-align:center;
+      border-radius:3px;
+      vertical-align: bottom;
+      font-size:10px;
+    }
+  </style>
+  <script>
+  window.onload=function(){
+    var btns=document.getElementsByName("button");
+    var wrap=document.getElementById("wrap");   
+    btns.forEach(function(item,index){
+      item.onclick=function(){
+        //创建一个新的span
+        var text=document.getElementById("text_input").value;
+        //限制输入字符
+        if(!text.match(/^\d{2}$/)){
+          alert("err");
+          return;
+        }
+        var new_span=document.createElement("span");
+        new_span.innerHTML=text;
+        //限制队列数目
+        if(index==0||index==1){
+          if(wrap.getElementsByTagName("span").length==60){
+            alert("full");
+            return;
+          }
+        }
+        //分别对队列操作
+        switch(index){
+          case 0:
+            if(text){
+              wrap.insertBefore(new_span,wrap.firstChild);
+            };
+            break;
+          case 1:
+            if(text){
+              wrap.appendChild(new_span);
+            };
+            break;  
+          case 2:
+            if(wrap.firstChild){
+              wrap.removeChild(wrap.firstChild);
+            }
+            break;
+          case 3:
+            if(wrap.lastChild){
+              wrap.removeChild(wrap.lastChild);
+            }
+            break;
+        }
+        //修饰显示效果
+        var spans=wrap.getElementsByTagName("span");
+        for(var i=0;i<spans.length;i++){
+          spans[i].style.height=parseInt(spans[i].innerHTML)+"px";
+          spans[i].style.background="rgb("+(parseInt(spans[i].innerHTML)+150)+","
+          +(parseInt(spans[i].innerHTML)+100)+","+(parseInt(spans[i].innerHTML)+50)+")";
+        }
+        if(wrap.getElementsByTagName("span").length){
+          wrap.style.display="inline-block";
+        }else{
+          wrap.style.display="none";
+        }
+      }
+    });
+  } 
+  </script>
+</head>
+<body>
+  <p>输入一个数值，操作队列，并且用柱状图显示</p>
+  <form action="" name="form1">
+    <input type="text" name="number" id="text_input" placeholder="please input a number between 10 to 99" style="width:300px;height:30px;margin:20px 0"><br>
+    <input name="button" type="button" value="左增一个">
+    <input name="button" type="button" value="右增一个">
+    <input name="button" type="button" value="左移一个">
+    <input name="button" type="button" value="右移一个">
+  </form>
+  <div class="wrap" id="wrap">
+    <!-- <span>56</span>
+    <span>56</span> -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_21</title>
+  <style>
+    #tag-box span,
+    #hobby-box span{
+      background:#4597EF;
+      cursor:pointer;
+      color:#fff;
+      padding:0 20px;
+      border-radius:10px;
+    }
+    textarea{
+      margin-top:50px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="tag">
+  <div id="tag-box">
+    <!-- <span>tag1</span>
+    <span>tag2</span> -->
+  </div>
+
+  <textarea name="" id="textarea" cols="30" rows="10">篮球 足球 钢球， 皮球，滚球，泥球，篮球
+  </textarea>
+  <br>
+  <button id="txt-btn">确认爱好</button>
+  <div id="hobby-box">
+    <!-- <span>hobby1</span> -->
+  </div>
+</body>
+  <script src="js/main.js"></script>
+  <!-- <script>
+    var test=[1,2,3,4,5,6,7,8,9,10,11,12];
+    test=checkData(test);
+    console.log(test);
+    function checkData(data){
+      //最多十个
+      if(data.length>10){
+        //保留后十个
+        data.shift();
+        if(data.length==10){
+          alert(data)
+          return data;
+        }else{
+          checkData(data);
+        };
+      }else{
+        return data;
+      }
+    }
+  </script> -->
+</html>

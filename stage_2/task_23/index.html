@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_23</title>
+  <script src="js/main.js"></script>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      background:#fff;
+    }
+    form{
+      width:500px;
+      margin:20px auto;
+      padding:0 20px;
+      border: 1px solid #999;
+    }
+    .clearfix:after{
+      content:"";
+      display:block;
+      height:0;
+      clear:both;
+    }
+    .form-group{
+      width:100%;
+      height:30px;
+      line-height:30px;
+      margin:10px 0;
+      text-align: center;
+    }
+    .form-group input{
+      height:100%;
+      float:left;
+    }
+    .form-group label{
+      display:inline-block;
+      float:left;
+    }
+    input[type="button"]{
+      padding:3px 20px;
+      border:none;
+      background:#4384F5;
+      border-radius:2px;
+      color:#fff;
+      cursor:pointer;
+    }
+    input[type="text"]{
+      width:300px;
+    }
+    input[type="radio"]{
+      margin:10px;
+      width:15px;
+      height:15px;
+      cursor:pointer;
+    }
+    .btn-2{
+      margin-left:30px;
+    }
+
+    .container div{
+      padding:5px;
+      margin:0 5px;
+      border:1px solid #9B9090;
+      display:flex;
+      justify-content: space-around;
+    }
+    .container{
+      margin:10px;
+      cursor:pointer;
+    }
+    form p{
+      font-size:12px;
+      border-bottom:1px dashed #999;
+      margin:10px 0;
+      background:#FBE0FB;
+    }
+    h6{
+      font-size:20px;
+      line-height: 30px;
+      background:#333;
+      color:#fff;
+      padding-left:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+  </div>
+  <form action="">
+    <p>遍历</p>
+    <div class="form-group">
+      <input name="btn-df" type="button" value="深度优先">
+      <input name="btn-bf" class="btn-2" type="button" value="广度优先">
+    </div>
+    <p>搜索</p>
+    <div class="form-group">
+      <label for="method">深度优先</label>
+      <input name="method" type="radio" value="method-df" checked="checked">
+      <label for="">广度优先</label>
+      <input name="method" type="radio" value="method-bf">
+    </div>
+    <div class="form-group">
+      <input name="input-search" type="text" placeholder="在这里输入哦">
+      <input name="btn-search" type="button" value="搜索">
+    </div>
+    <p>删除选中</p>
+    <div class="form-group">
+      <input name="btn-delete" type="button" value="删除选中">
+    </div>
+    <p>新增节点</p>
+    <div class="form-group">
+      <input name="new-node" type="text" placeholder="新增的哦">
+      <input name="btn-new" type="button" value="新增">
+    </div>
+  </form>
+  <h6>bug：1 不能删除根节点</h6>
+</body>
+</html>

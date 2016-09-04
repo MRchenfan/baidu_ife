@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_30 多个表单元素验证</title>
+  <style>
+    body{
+      font-size:16px;
+    }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font:16px "微软雅黑";
+    }
+
+    
+    .form-group{
+      width:500px;
+      zoom:1;
+      padding:10px;
+    }
+    .form-group:before{
+      content:"";
+      display:block;
+      clear:both;
+      height:0;
+    }
+    .form-group label{
+      display:inline-block;
+      width:20%;
+      text-align:right;
+      font-weight:bold;
+      letter-spacing:0.1em;
+    }
+    .form-group input{
+      width:75%;
+      height:2.5em;
+      float:right;
+      margin-bottom:10px;
+      border-radius:5px;
+      
+    }
+    .form-group input:focus+p{
+      display:block;
+    }
+    .form-group p{
+      margin-left:25%;
+      display:none;
+      color:#999;
+      font-size:0.8em;
+    }
+    .form-group button{
+      width:50px;
+      height:30px;
+      background:#6BBFED;
+      border:none;
+      color:#fff;
+      letter-spacing: 3px;
+      border-radius:5px;
+      float:right;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <div class="form-group">
+      <label for="name">姓名</label>
+      <input type="text" name="name">
+      <p>必填，长度为4~16个字符</p>
+    </div>
+    <div class="form-group">
+      <label for="password">密码</label>
+      <input type="password" name="password">
+      <p>必填，请输入密码</p>
+    </div>
+    <div class="form-group">
+      <label for="pw_repeat">密码确认</label>
+      <input type="password" name="pw_repeat">
+      <p>必填，请重复输入密码</p>
+    </div>
+    <div class="form-group">
+      <label for="email">邮箱</label>
+      <input type="email" name="email">
+      <p>必填，请输入邮箱</p>
+    </div>
+    <div class="form-group">
+      <label for="tel">手机</label>
+      <input type="tel" name="tel">
+      <p>必填，请输入手机号码</p>
+    </div>
+    <div class="form-group">
+      <button type="submit">提交</button>
+    </div>
+  </form>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

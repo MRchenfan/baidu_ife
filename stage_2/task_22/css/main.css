@@ -1,0 +1,22 @@
+@import url("reset.css");
+div.tree-root{
+  width:800px;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+}
+div{
+  margin:2px;
+  padding:10px;
+  border:1px solid red;
+  float:left;
+}
+input{
+  margin:50px;
+  border:none;
+  padding:20px;
+  background:#316BE4;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}

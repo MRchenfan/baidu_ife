@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script src="js/main.js"></script>
+  <style>
+    .container{
+      padding:10px;
+      width:600px;
+    }
+    .form-group{
+      margin:10px 0;
+    }
+    div.treeToolkit{
+      padding:10px;
+      border:1px dashed #85A0DE;
+    }
+    div.treeToolkit div{
+      padding-left:2em;
+    }
+    div.treeToolkit div p{
+      margin-left:-2em;
+      cursor:pointer; 
+    }
+    div.treeToolkit input[type="button"]{
+      border:none;
+      margin:0 5px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="service.php" method="get">
+      <div class="form-group">
+        <input name="input-search" type="text">
+        <input name="btn-search" type="button" value="搜索">
+        <input name="btn-clear" type="button" value="清除">
+      </div>
+    </form>
+    <div class="treeToolkit">
+    </div>
+  </div>
+<script>
+  TreeToolkit.init($(".treeToolkit"));
+
+  function $(el){
+    return document.querySelectorAll(el);
+  }
+</script>
+</body>
+</html>

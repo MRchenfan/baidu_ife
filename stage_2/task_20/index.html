@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>task_20</title>
+  <style>
+    *{
+      font-size:20px;
+    }
+    textarea{
+      display:block;
+      width:300px;
+      height:200px;
+    }
+    input.insert{
+      display:block;
+      margin:10px 0;
+    }
+    .wrap{
+      float:left;
+      padding-right:5px;
+      border-right:2px dashed #333;
+    }
+    .show-box{
+      padding:5px;
+      margin-left:350px;
+      border:1px solid #333;
+    }
+    .show-box span{
+      padding:5px;
+      background:#999;
+      color:#fff;
+      margin:5px;
+      float:left;
+    }
+    .show-box span>strong{
+      color:#E82D2D;
+    }
+    .clearfloat:after{
+      content:"";
+      display:block;
+      clear:both;
+      height:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <textarea id="txt" name="txt" id="" cols="30" rows="10">baidu ife task 20 2016.6</textarea>
+    <input id="insert-btn" class="insert" type="button" value="插入">
+    <input id="search-txt" class="text" type="text">
+    <input id="search-btn" type="button" value="查询">
+  </div>
+  <div class="show-box clearfloat"
+  id="show-box">
+    <!-- <span>solid</span>
+    <span>chen</span> -->
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
