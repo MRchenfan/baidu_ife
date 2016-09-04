@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>task_11</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <!-- 视口 注意：不是响应式的页面不要禁用缩放和定义原始缩放 -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <!-- 允许safari web-app 的使用 -->
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <!-- 允许safari全屏浏览 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- safari状态栏 只有在 “apple-mobile-web-app-capable” content=”yes” 时生效-->
+  <meta name="apple-mobile-web-app-title" content="标题"> 
+  <!-- 添加到主屏后的标题（iOS 6 新增） -->
+  <meta name="theme-color" content="#91D4DA" />
+  <!-- 浏览器地址栏变颜色 切换选项卡时的颜色 Android Lollipop 中的 Chrome 39 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- 禁用手机号码检测 -->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <!-- 禁止转码（屏蔽广告） -->
+  <meta name="google" value="notranslate" />
+  <!-- 禁用谷歌翻译 -->
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico" /> 
+  <!-- 设置favicon -->
+  <link rel="stylesheet" href="css/task_11.css">
+  <link rel="stylesheet" href="css/code.css">
+</head>
+<body>
+<p lang="zh-cmn-Hans">中国</p>
+<p lang="zh-cmn-Hant">中国</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum modi quas temporibus, nulla rem expedita debitis iure recusandae similique perspiciatis sed, facere repellendus, repudiandae tempore laborum vero, ab pariatur ducimus.</p>
+<pre><code>
+<span class="function"><span class="keyword">function</span> <span class="title">errorHandler</span>(<span class="params">req</span>)</span>{
+  <span class="keyword">if</span> (req.status == <span class="number">404</span>) {
+    <span class="built_in">console</span>.log(<span class="string">"Page not found"</span>);
+    <span class="built_in">window</span>.location.href = <span class="link"><a href="//www.qianduan.net">//www.qianduan.net</a></span>;
+  }
+}
+</code></pre>
+</body>
+</html>

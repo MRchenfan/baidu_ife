@@ -1,0 +1,51 @@
+@import url("css_reset.css");
+
+.box1,.box2,.box3,.box4{
+  width:100px;
+  border:2px solid #675FEA;
+  text-align:center;
+  /*margin:0 10px;*/
+}
+.box1{
+  height:120px; 
+}
+.box2{
+  height:100px; 
+}
+.box3{
+  height:40px; 
+}
+.box4{
+  height:200px; 
+}
+
+@media(min-width:760px){
+  body{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid #D55252;
+  }
+}
+@media(max-width:759px){
+  body{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    border:1px solid #D55252;
+  }
+  .box1{
+    order:1;
+  }
+  .box2{
+    order:2;
+  }
+  .box3{
+    order:3;
+  }
+  .box4{
+    order:-1;
+  }
+   
+}

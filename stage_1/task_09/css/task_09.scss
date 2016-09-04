@@ -1,0 +1,300 @@
+@import "css_reset.css";
+/* cols grids */
+@import "cols.scss";
+/* cols grids end*/
+body,p,h1,h2,h3,h4,a,table,div{
+	font:12px/1em "黑体，regular";
+}
+i{
+	display:inline-block;
+	text-indent:-9999px;
+	vertical-align:middle;
+}
+body{
+	background:#eee;
+}
+/* common use css */
+header{
+	width:100%;
+	height:57px;
+	background:#2189BF;
+	
+	.logo,.search{
+		height:57px;
+		line-height:57px;
+	}
+	.logo{
+		float:left;
+
+		i{
+			width:36px;
+			height:36px;
+			background:url("../img/logo.png");
+		}
+	}
+	.search{
+		float:right;
+		.log-in{
+
+		 	i{
+		 		width:15px;
+		 		height:17px;
+				background:url("../img/log-ico.gif");
+			}
+		}
+	}
+}
+/* header css end */
+.header-wrap{
+	width:90%;
+	margin:0 auto;
+}
+.main{
+	position:absolute;
+	top:57px;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.aside{
+	width:260px;
+	background:#2A2E3D;
+	color:#fff;
+	height:100%;
+	float:left;
+	overflow:auto;
+}
+.aside-title{
+		height:148px;
+		h2,strong{
+			font-size:16px;
+		}
+		h2{
+			height:74px;
+			line-height:74px;
+			text-align:center;
+			background:url("../img/aside.gif") no-repeat 30px center;
+		}
+		div{
+			margin-top:20px;
+			p{
+				width:50%;
+				height:35px;
+				float:left;
+				text-align: center;
+			}
+			p.save{
+				border-right:1px solid #ddd;
+			}
+		}
+	}
+.aside-list{
+	padding:13px 0 0 45px;
+	li{
+		width:100%;
+		height:46px;
+	}
+	li:hover{
+		height:100px;
+		cursor:pointer;
+	}
+}
+.aside-list li ul{
+	display:none;
+	margin-left:20px;
+}
+.aside-list li:hover ul{
+	display:block;
+	li{
+		height:20px;
+		line-height: 20px;
+	}
+	li:hover{
+		height:100px;
+	}
+}
+/* aisde css end */
+.content{
+	background:#eee;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:260px;
+	overflow:auto;
+}
+.content-crumb{
+	height:30px;
+	line-height:30px;
+	background:#fff;
+	padding:0 30px;
+}
+.content-wrap{
+	width:910px;
+	margin:18px auto 156px;
+	padding:0 10px;
+}
+/* content-search */
+.content-search{
+	height:86px;
+	background:#fff;
+	border:1px solid #ddd;
+}
+.content-search dl{
+	float:left;
+	dd{
+		height:43px;
+		line-height:43px; 
+	}
+}
+.change-icon{
+	width:40px;
+	height:86px;
+	background:url("../img/change-icon.gif") no-repeat 10px center;
+}
+.deal{
+	margin-left:-30px;
+	select{
+	}
+}
+/* content-history */
+.content-history{
+	margin-top:18px;
+	height:65px;
+}
+.back-btn,.time-price>li,.next-btn,.his-btn{
+	float:left;
+	background:#fff;
+	border-top:2px solid #CACDD1;
+	border-left:2px solid #CACDD1;
+	height:100%;
+}
+.next-btn,
+.back-btn{
+	width:30px;
+}
+.time-price{
+	height:100%;
+	float:left;
+}
+.time-price li{
+	float:left;
+	width:110px;
+	margin-left:4px;
+}
+.next-btn{
+	margin-left:4px;
+}
+.his-btn{
+	width:130px;
+	float:right;
+	cursor:pointer;
+	line-height:65px;
+	.his-icon{
+		width:32px;
+		height:32px;
+		background:url("../img/his-icon.gif") no-repeat;
+	}
+}
+
+.content-statistic{
+	margin-top:18px;
+	margin-bottom:18px;
+}
+.content-statistic{
+	.turnover{
+		margin:0 -15px;
+		li{
+			float:left;
+			width:25%;
+			padding:0 15px;
+			.turnover-wrap{
+				background:#fff;
+				height:71px;
+				position:relative;
+				border-left:3px solid red;
+				.color{
+					position:absolute;
+					top:13px;
+					right:15px;
+					width:60px;
+					height:46px;
+					background:red;
+				}
+			}
+		}
+	}
+}
+
+.content-section{
+	margin:10px -4px;
+}
+.content-section .card{
+	height:356px;
+	margin:0 4px;
+	background:#fff;
+	float:left;
+	border-radius:20px;
+}
+.md-card{
+	width:530px;
+}
+.sm-card{
+	width:352px;
+}
+.card .card-head{
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	height:40px;
+	line-height:40px;
+	background:#F4F6F7;
+	padding-left:30px;
+}
+.tab-box{
+	width:100%;
+	height:100%;
+	padding:13px 21px;
+}
+.tab-list li{
+	float:left;
+	width:85px;
+	height:27px;
+	margin:4px;
+	background:#F4F6F7;
+	line-height:27px;
+	text-align:center;
+	border-radius:5px;
+}
+.tab-content{
+	width:490px;
+	padding:30px 38px;
+	border:1px solid #999;
+}
+.search-box{
+	padding:18px 35px;
+	.title,.description,.price,.charger,.details{
+		border-bottom:1px solid #333;
+		h2{
+			color:#999;
+		}
+	}
+	.price,.charger{
+		float:left;
+		width:50%;
+	}
+	.price{
+		border-right:1px solid #333;
+	}
+	.submit{
+		.search-btn{
+			border:none;
+			background:#388AC1;
+			color:#fff;
+			padding:5px 10px;
+			border-radius:4px;
+		}
+	}
+}
+
+
+/* content css end */
