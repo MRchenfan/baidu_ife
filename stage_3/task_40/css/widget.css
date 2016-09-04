@@ -1,0 +1,84 @@
+/* reset */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul, img { margin: 0; padding: 0; }
+* { box-sizing: border-box; }
+body { background: #fff; overflow: hidden; }
+ul li { list-style: none }
+.clearfix:after { display: block; content: ""; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+a { text-decoration: none; display: inline-block; }
+
+h6{
+  line-height: 30px;
+  font-size:20px;
+  background: #333;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.detail{
+  background: #333;
+  color:#eee;
+}
+/* widget calender  */
+.calender-picker{
+  width:500px;
+  margin:0 auto;
+}
+.form-group{
+  margin:10px 0;
+}
+
+.calender-box{
+  width:280px;
+  border:1px solid #333;
+  box-shadow:0 0 4px #333;
+  background: #fff;
+}
+.calender-header{
+  width:100%;
+  line-height: 30px;
+  text-align: center;
+  background: #333;
+  color:#EEE;
+  position: relative;
+}
+.calender-header-text{
+  font-size: 20px;
+}
+.calender-header-btn-prev,
+.calender-header-btn-next{
+  position:absolute;
+  width:30px;
+  cursor: pointer;
+}
+.calender-header-btn-prev{
+  top:0;  
+  left:0;
+}
+.calender-header-btn-next{
+  top:0;
+  right:0;
+}
+
+.calender-footer{
+  text-align: right;
+}
+
+.calender{
+  width:100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.calender tr{
+  width:100%;
+  line-height: 25px;
+}
+.calender td{
+  cursor:pointer;
+}
+
+.calender-week-1,
+.calender-week-7,
+.calender-date-1,
+.calender-date-7{
+  color:#DE3D3D;
+} 

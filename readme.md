@@ -21,5 +21,9 @@
 
 
 ## 阶段三
+- [task_37: UI组件之弹出层 ](https://mrchenfan.github.io/baidu_ife/stage_3/task_37)
+- [task_38: UI组件之排序表格 ](https://mrchenfan.github.io/baidu_ife/stage_3/task_38)
+
+- [task_40: UI组件之日历 ](https://mrchenfan.github.io/baidu_ife/stage_3/task_40)
 
 ## 阶段四

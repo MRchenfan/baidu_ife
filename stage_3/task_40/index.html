@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Demo</title>
+  <link rel="stylesheet" href="css/widget.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="../zepto.js"></script>
+  <script src="../require.js" data-main="js/main.js"></script>
+</head>
+<body>
+  <h6>日历组件 calender-picker</h6>
+  <div class="calender-picker">
+    <div class="form-group">
+      <input id="date" type="text" placeholder="2016-9-1">
+    </div>
+    <div class="calender-box animated bounceIn" style="display:none;position:absolute;">
+      <div class="calender-header">
+        <div class="calender-header-btn-prev">&lt</div>
+        <h2 class="calender-header-text">2016年8月</h2>
+        <div class="calender-header-btn-next">&gt</div>
+      </div>
+      <table class="calender">
+        <thead>
+          <tr class="calender-week">
+            <th class="calender-week-1">日</th>
+            <th class="calender-week-2">一</th>
+            <th class="calender-week-3">二</th>
+            <th class="calender-week-4">三</th>
+            <th class="calender-week-5">四</th>
+            <th class="calender-week-6">五</th>
+            <th class="calender-week-7">六</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="calender-footer">author:chen</div>
+    </div> 
+  </div>
+
+  <h6>日历组件 时间段设置</h6>
+  <div class="calender-2">
+    <div class="calender-box animated bounceIn">
+      <div class="calender-header">
+        <div class="calender-header-btn-prev">&lt</div>
+        <h2 class="calender-header-text">2016年8月</h2>
+        <div class="calender-header-btn-next">&gt</div>
+      </div>
+      <table class="calender">
+        <thead>
+          <tr class="calender-week">
+            <th class="calender-week-1">日</th>
+            <th class="calender-week-2">一</th>
+            <th class="calender-week-3">二</th>
+            <th class="calender-week-4">三</th>
+            <th class="calender-week-5">四</th>
+            <th class="calender-week-6">五</th>
+            <th class="calender-week-7">六</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="calender-footer">author:chen</div>
+    </div> 
+  </div>
+  <div class="detail">
+    接口：choosed 事件，参数是一个date对象。
+  </div>
+</body>
+</html>
